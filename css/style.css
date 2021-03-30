@@ -1,17 +1,95 @@
-header{
-   background-color: deeppink;
-}
 
+/*
+img{
+    width: 100px;
+    display: block;
+    margin: auto;
+}*/
+h1,h2{
+
+font-size:25px;
+
+}
 
 body{
-
-background-color: pink;
-    color:black;
-
+background-image:url("https://thumbs.dreamstime.com/b/man-question-doubtful-holding-mark-problems-solutions-symbol-pensive-male-getting-answers-portrait-peeking-behind-130604105.jpg");
+background-repeat:no-repeat;
+background-attachment: fixed;
+background-size:cover;
 
 }
 
 
+body main{width:auto;
+    height: 1500px;
+}
 
 
-  
+
+.ul2 li:nth-child(odd){
+font-size: medium;
+color:rgb(255, 0, 200);
+font-size: 25px;
+}
+
+.ul2 li:nth-child(even){
+    color:rgb(7, 42, 241);
+    font-size: medium;
+    font-size: 25px;
+   
+
+}
+
+
+.c1{
+    float:left;
+    height:50px;
+}
+
+ul li{text-transform:uppercase;
+     margin-left: 28px;
+     list-style:square;
+
+}
+
+p{
+ color: rgb(39, 25, 30);
+line-height: 1.5;
+text-align: center;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 25px;
+border-color: rgb(231, 7, 156);
+border-style:double;
+border-radius:5px;
+}
+
+footer{
+text-align: center;
+text-decoration-line: underline;
+}
+ol li {
+    display:list-item;
+    margin-left: 28px;
+}
+ol{list-style:decimal;}
+main ol li{
+    
+    padding :5px;
+    border-style:double;
+    border-color:purple;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+main ol li img{   
+    margin-left:2%;
+}
+.ul1{
+    color:palevioletred;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+    border-color: black;
+    border-style: double;
+    border-radius: 5px;
+}
