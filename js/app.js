@@ -26,22 +26,29 @@
 }*/
 
 let correctAnswer = 0;
-var userName = prompt("Please, what is your name?");
+let  userName = prompt("Please, what is your name?");
+function Qusername(userName){while(!userName){
 
-while(!userName){
 
-
-    userName = prompt("Please, what is your name?")
-
+  userName = prompt("Please, what is your name?")
 }
 
+alert('Hello '+userName+", I am really pleased with you<");
 document.write("<center><h1>welcome : " + userName + "</h1></center>");
 
 document.write("<center><p>Hello " + userName+ ", I am really pleased with you</p></center>");
 
 document.write('<center><img src="https://i.pinimg.com/originals/0d/a5/cb/0da5cbca5d728a789100439958f50235.gif"alt="hi" style="width=500px;"></center>');
-//**************************************************************************************************
+}
+ 
+Qusername(userName);
 
+
+/*
+
+
+
+//**************************************************************************************************
 
 
 var a1 = prompt("You have to guess, do you think I like trekking?").toUpperCase();
@@ -268,3 +275,4 @@ for (let m=0;m<arr.length;m++){
     alert('the aswers was ' + arr[m]);}
   
   alert('ok ' + userName + ' you answered ' + correctAnswer + ' question correctly');
+*/
