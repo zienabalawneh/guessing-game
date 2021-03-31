@@ -180,82 +180,53 @@ Q4();
 
 
 //*********************************************************************************************************
-/*
+function Q5() {
+  let sleephours;
+  let attempt = 4;
 
-var a5 = prompt("Do you expect that I am a lazy person and tend to be lethargic?").toUpperCase();;
-//answerQuestion(a5);
+  for (let i = 0; i < 4; i++) {
+    sleephours = Number(prompt('How many hours do I sleep at night??'));
+    while (!sleephours) { sleephours = Number(prompt('How many hours do I sleep at night??')); }
+    if (sleephours === 7) {
+      correctAnswer++;
+      console.log('it is a correct answer');
+      alert('it is a correct answer');
+      break;
+    }
+    else if (sleephours > 7) {
+      console.log('it is more than what you entered, try again ' + sleephours);
+      alert('it is more than what you entered, try again');
+      attempt--;
 
-while(a5!=='YES'&&a5!=='Y'&&a5!=='NO'&&a5!=='N'){
+    }
+    else if (sleephours < 7) {
+      console.log('it is less than what you entered, try again ' + sleephours);
+      alert('it is less than what you entered, try again');
+      attempt--;
+    }
 
-    a5 = prompt("Do you expect that I am a lazy person and tend to be lethargic?").toUpperCase();}
 
-    switch (a4.toUpperCase()) {
-        case 'YES':
-        case 'Y':
-             console.log(' Oh, your answer,' + a5 + ",its false, I love sleeping but I am not a lazy person");
-            alert(' Oh, your answer,' + a5 + ",its false, I love sleeping but I am not a lazy person");
-            break;
-
-        case 'NO':
-        case 'N':
-            console.log(' Your answer is,' + a5 + ",that's cool, I love sleeping but I am not a lazy person");
-            alert(' Your answer is,' + a5 + ",that's cool, I love sleeping but I am not a lazy person");
-             correctAnswer++;
-            break;
+    if (attempt === 0) {
+      alert('the correct answer is 7 hours');
 
     }
 
 
 
-
-
-
-
-console.log(correctAnswer);
-
-
-
-
-
-
-let sleephours;
-let attempt = 4;
-
-for (let i = 0; i < 4; i++) {
-
-
-    sleephours = Number(prompt('How many hours do I sleep at night??'));
-
-  if (sleephours === 7) {
-    correctAnswer++;
-    alert('it is a correct answer');
-    break;
   }
-
-
-
-  else if (sleephours > 7) {
-    alert('it is more than what you entered, try again');
-    attempt--;
-
-  }
-  else if (sleephours < 7) {
-    alert('it is less than what you entered, try again');
-    attempt--;
-  }
-
-
-  if (attempt === 0) {
-    alert('the correct answer is 7 hours');
-
-  }
-
-
 
 }
+Q5();
 
 
 
+
+
+
+
+
+//***********************************************************************************
+/*
 let favfood ;
 
 let attempt2=6;
