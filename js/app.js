@@ -260,6 +260,7 @@ Q6();
 
 //***********************************************************************************
 function Q7(){
+
  let favfood ;
 
 let attempt2=6;
@@ -300,6 +301,7 @@ for (let m=0;m<arr.length;m++){
 }
 
 Q7();
+//************************************* */
 
 function ScoreUser(userName,correctAnswer){
 
