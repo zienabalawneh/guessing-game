@@ -13,13 +13,16 @@
 + ## One of the sites that helped me with my project
   1. [w3schools](https://www.w3schools.com/)
   
-
+# lab04 
+Navigator : Zienab Alawneh
+Driver : Alia'a Sondoqah 
 
 
 + How did this go, overall? Well most of the things are clear
 
 + What observations or questions do you have about what you have learned so far?  no thing  ,most things are clear
 
-+ How long did it take you to complete this assignment? And, before you started, how long did you think it would take you to complete this assignment? I was expecting it to take three and a half hours with me, but it took five and a half hours
++ How long did it take you to complete this assignment? And, before you started, how long did you think it would take you to complete this assignment? I was expecting it to take three and a half hours with me, but it took half an  hour.
 
 ![guessing](img/giphy.gif)
+
