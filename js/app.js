@@ -44,38 +44,42 @@ document.write('<center><img src="https://i.pinimg.com/originals/0d/a5/cb/0da5cb
 Qusername(userName);
 
 
-/*
+
 
 
 
 //**************************************************************************************************
 
-
-var a1 = prompt("You have to guess, do you think I like trekking?").toUpperCase();
-//answerQuestion(a1);
-
-while(a1!=='YES'&& a1!=='Y' && a1!=='NO'&& a1!=='N'){
-
-    a1 = prompt("You have to guess, do you think I like trekking?").toUpperCase();}
+function Q1() {
+  var a1 = prompt("You have to guess, do you think I like trekking?").toUpperCase();
+  //answerQuestion(a1);
 
 
-switch (a1.toUpperCase()) {
+  while (a1 !== 'YES' && a1 !== 'Y' && a1 !== 'NO' && a1 !== 'N') {
+
+    a1 = prompt("You have to guess, do you think I like trekking?").toUpperCase();
+  }
+
+
+  switch (a1.toUpperCase()) {
     case 'YES':
     case 'Y':
-        console.log(' Oh, your answer,' ,a1+ ", that's cool");
-        alert(' Oh, your answer,' + a1 + ", that's cool");
-        correctAnswer++;
-        break;
+      console.log(' Oh, your answer,', a1 + ", that's cool");
+      alert(' Oh, your answer,' + a1 + ", that's cool");
+      correctAnswer++;
+      break;
 
     case 'NO':
     case 'N':
-         console.log('your answer,' ,a1+ ", better luck");
-        alert(' Your answer is,' + a1 + ", better luck");
-        break;
-   
+      console.log('your answer,', a1 + ", better luck");
+      alert(' Your answer is,' + a1 + ", better luck");
+      break;
+
+  }
 }
+Q1();
 
-
+/*
 
 //*********************************************************************************************************
 
@@ -93,13 +97,13 @@ while(a2!=='YES' && a2!=='Y' && a2!=='NO'&& a2!=='N'){
             alert(' Oh, your answer,' + a2 + ", that's cool");
             correctAnswer++;
             break;
-    
+
         case 'NO':
         case 'N':
              console.log(' Your answer is,' + a2 + ", better luck");
             alert(' Your answer is,' + a2 + ", better luck");
             break;
-        
+
     }
 
 //*********************************************************************************************************
@@ -116,16 +120,16 @@ while(a3!=='YES'&&a3!=='Y'&&a3!=='NO'&&a3!=='N'){
         case 'Y':
              console.log(' Oh, your answer,' + a3 + ",its false, i does not like spring and summer ");
             alert(' Oh, your answer,' + a3 + ",its false, i does not like spring and summer ");
-           
+
             break;
-    
+
         case 'NO':
         case 'N':
             console.log(' Your answer is,' + a3 + ",that's cool, i does not like spring and summer");
             alert(' Your answer is,' + a3 + ",that's cool, i does not like spring and summer");
              correctAnswer++;
             break;
-       
+
     }
 
 
@@ -147,13 +151,13 @@ while(a4!=='YES'&& a4!=='Y'&& a4!=='NO' &&a4!=='N'){
             alert(' Oh, your answer,' + a4 + ",that's cool,I love swimming so much ");
             correctAnswer++;
             break;
-    
+
         case 'NO':
         case 'N':
             console.log(' Your answer is,' + a4 + "better luck,I love swimming so much");
             alert(' Your answer is,' + a4 + "better luck,I love swimming so much" );
             break;
-       
+
     }
 
 
@@ -175,14 +179,14 @@ while(a5!=='YES'&&a5!=='Y'&&a5!=='NO'&&a5!=='N'){
              console.log(' Oh, your answer,' + a5 + ",its false, I love sleeping but I am not a lazy person");
             alert(' Oh, your answer,' + a5 + ",its false, I love sleeping but I am not a lazy person");
             break;
-    
+
         case 'NO':
         case 'N':
             console.log(' Your answer is,' + a5 + ",that's cool, I love sleeping but I am not a lazy person");
             alert(' Your answer is,' + a5 + ",that's cool, I love sleeping but I am not a lazy person");
              correctAnswer++;
             break;
-       
+
     }
 
 
@@ -273,6 +277,6 @@ console.log(z);
 }
 for (let m=0;m<arr.length;m++){
     alert('the aswers was ' + arr[m]);}
-  
+
   alert('ok ' + userName + ' you answered ' + correctAnswer + ' question correctly');
 */
