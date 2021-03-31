@@ -26,6 +26,7 @@
 }*/
 
 let correctAnswer = 0;
+
 let userName = prompt("Please, what is your name?");
 function Qusername(userName) {
   while (!userName) {
@@ -148,35 +149,38 @@ Q3();
 
 
 //*********************************************************************************************************
-/*
-var a4 = prompt("Do I love swimming?").toUpperCase();;
-//answerQuestion(a4);
+function Q4() {
+  var a4 = prompt("Do I love swimming?").toUpperCase();;
+  //answerQuestion(a4);
 
-while(a4!=='YES'&& a4!=='Y'&& a4!=='NO' &&a4!=='N'){
+  while (a4 !== 'YES' && a4 !== 'Y' && a4 !== 'NO' && a4 !== 'N') {
 
-    a4 = prompt("Do I love swimming?").toUpperCase();}
+    a4 = prompt("Do I love swimming?").toUpperCase();
+  }
 
-    switch (a4.toUpperCase()) {
-        case 'YES':
-        case 'Y':
-             console.log(' Oh, your answer,' + a4 + ",that's cool,I love swimming so much ");
-            alert(' Oh, your answer,' + a4 + ",that's cool,I love swimming so much ");
-            correctAnswer++;
-            break;
+  switch (a4.toUpperCase()) {
+    case 'YES':
+    case 'Y':
+      console.log(' Oh, your answer, ' + a4 + " ,that's cool,I love swimming so much ");
+      alert(' Oh, your answer, ' + a4 + " ,that's cool,I love swimming so much ");
+      correctAnswer++;
+      break;
 
-        case 'NO':
-        case 'N':
-            console.log(' Your answer is,' + a4 + "better luck,I love swimming so much");
-            alert(' Your answer is,' + a4 + "better luck,I love swimming so much" );
-            break;
+    case 'NO':
+    case 'N':
+      console.log(' Your answer is, ' + a4 + " better luck,I love swimming so much");
+      alert(' Your answer is, ' + a4 + " better luck,I love swimming so much");
+      break;
 
-    }
+  }
+}
 
+Q4();
 
 
 
 //*********************************************************************************************************
-
+/*
 
 var a5 = prompt("Do you expect that I am a lazy person and tend to be lethargic?").toUpperCase();;
 //answerQuestion(a5);
