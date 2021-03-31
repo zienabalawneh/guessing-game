@@ -178,9 +178,43 @@ function Q4() {
 Q4();
 
 
+/**************************************************** */
+function Q5() {
+  var a5 = prompt("Do I love programing?").toUpperCase();;
+  //answerQuestion(a4);
+
+  while (a5 !== 'YES' && a5 !== 'Y' && a5 !== 'NO' && a5 !== 'N') {
+
+    a5 = prompt("Do I love  programing ?").toUpperCase();
+  }
+
+  switch (a5.toUpperCase()) {
+    case 'YES':
+    case 'Y':
+      console.log(' Oh, your answer, ' + a5 + " ,that's cool,I love programing so much ");
+      alert(' Oh, your answer, ' + a5 + " ,that's cool,I love programing so much ");
+      correctAnswer++;
+      break;
+
+    case 'NO':
+    case 'N':
+      console.log(' Your answer is, ' + a5 + " better luck,I love programing so much");
+      alert(' Your answer is, ' + a5 + " better luck,I love programing so much");
+      break;
+
+  }
+}
+
+Q5();
+
+
+
+
+
+
 
 //*********************************************************************************************************
-function Q5() {
+function Q6() {
   let sleephours;
   let attempt = 4;
 
@@ -216,8 +250,7 @@ function Q5() {
   }
 
 }
-Q5();
-
+Q6();
 
 
 
@@ -226,8 +259,8 @@ Q5();
 
 
 //***********************************************************************************
-/*
-let favfood ;
+function Q7(){
+ let favfood ;
 
 let attempt2=6;
 
@@ -263,7 +296,15 @@ console.log(z);
   }
 }
 for (let m=0;m<arr.length;m++){
-    alert('the aswers was ' + arr[m]);}
+  alert('the aswers was ' + arr[m]);}
+}
+
+Q7();
+
+function ScoreUser(userName,correctAnswer){
+
 
   alert('ok ' + userName + ' you answered ' + correctAnswer + ' question correctly');
-*/
+}
+  
+ScoreUser(userName,correctAnswer);
