@@ -26,21 +26,24 @@
 }*/
 
 let correctAnswer = 0;
-let  userName = prompt("Please, what is your name?");
-function Qusername(userName){while(!userName){
+let userName = prompt("Please, what is your name?");
+function Qusername(userName) {
+  while (!userName) {
 
 
-  userName = prompt("Please, what is your name?")
+    userName = prompt("Please, what is your name?")
+  }
+  console.log('Hello ' + userName + ', I am really pleased with you');
+
+  alert('Hello ' + userName + ", I am really pleased with you");
+  
+  document.write("<center><h1>welcome : " + userName + "</h1></center>");
+
+  document.write("<center><p>Hello " + userName + ", I am really pleased with you</p></center>");
+
+  document.write('<center><img src="https://i.pinimg.com/originals/0d/a5/cb/0da5cbca5d728a789100439958f50235.gif"alt="hi" style="width=500px;"></center>');
 }
 
-alert('Hello '+userName+", I am really pleased with you<");
-document.write("<center><h1>welcome : " + userName + "</h1></center>");
-
-document.write("<center><p>Hello " + userName+ ", I am really pleased with you</p></center>");
-
-document.write('<center><img src="https://i.pinimg.com/originals/0d/a5/cb/0da5cbca5d728a789100439958f50235.gif"alt="hi" style="width=500px;"></center>');
-}
- 
 Qusername(userName);
 
 
@@ -64,15 +67,15 @@ function Q1() {
   switch (a1.toUpperCase()) {
     case 'YES':
     case 'Y':
-      console.log(' Oh, your answer,', a1 + ", that's cool");
-      alert(' Oh, your answer,' + a1 + ", that's cool");
+      console.log(' Oh, your answer, ', a1 + " , that's cool");
+      alert(' Oh, your answer, ' + a1 + " , that's cool");
       correctAnswer++;
       break;
 
     case 'NO':
     case 'N':
-      console.log('your answer,', a1 + ", better luck");
-      alert(' Your answer is,' + a1 + ", better luck");
+      console.log('your answer, ', a1 + " , better luck");
+      alert(' Your answer is, ' + a1 + " , better luck");
       break;
 
   }
@@ -94,53 +97,58 @@ function Q2() {
   switch (a2.toUpperCase()) {
     case 'YES':
     case 'Y':
-      console.log(' Oh, your answer,' + a2 + ", that's cool");
-      alert(' Oh, your answer,' + a2 + ", that's cool");
+      console.log(' Oh, your answer, ' + a2 + " , that's cool");
+      alert(' Oh, your answer, ' + a2 + " , that's cool");
       correctAnswer++;
       break;
 
     case 'NO':
     case 'N':
-      console.log(' Your answer is,' + a2 + ", better luck");
-      alert(' Your answer is,' + a2 + ", better luck");
+      console.log(' Your answer is, ' + a2 + " , better luck");
+      alert(' Your answer is, ' + a2 + " , better luck");
       break;
 
   }
 }
 
 Q2();
+
+
+//*********************************************************************************************************
+function Q3() {
+  var a3 = prompt("Does I like spring and summer?").toUpperCase();;
+  //answerQuestion(a3);
+
+  while (a3 !== 'YES' && a3 !== 'Y' && a3 !== 'NO' && a3 !== 'N') {
+
+    a3 = prompt("Does I like spring and summer?").toUpperCase();
+  }
+
+  switch (a3.toUpperCase()) {
+    case 'YES':
+    case 'Y':
+      console.log(' Oh, your answer, ' + a3 + " ,its false, i does not like spring and summer ");
+      alert(' Oh, your answer, ' + a3 + " ,its false, i does not like spring and summer ");
+
+      break;
+
+    case 'NO':
+    case 'N':
+      console.log(' Your answer is, ' + a3 + " ,that's cool, i does not like spring and summer");
+      alert(' Your answer is, ' + a3 + " ,that's cool, i does not like spring and summer");
+      correctAnswer++;
+      break;
+
+  }
+}
+
+Q3();
+
+
+
+
+//*********************************************************************************************************
 /*
-//*********************************************************************************************************
-
-var a3 = prompt("Does I like spring and summer?").toUpperCase();;
-//answerQuestion(a3);
-
-while(a3!=='YES'&&a3!=='Y'&&a3!=='NO'&&a3!=='N'){
-
-    a3 = prompt("Does I like spring and summer?").toUpperCase();}
-
-    switch (a3.toUpperCase()) {
-        case 'YES':
-        case 'Y':
-             console.log(' Oh, your answer,' + a3 + ",its false, i does not like spring and summer ");
-            alert(' Oh, your answer,' + a3 + ",its false, i does not like spring and summer ");
-
-            break;
-
-        case 'NO':
-        case 'N':
-            console.log(' Your answer is,' + a3 + ",that's cool, i does not like spring and summer");
-            alert(' Your answer is,' + a3 + ",that's cool, i does not like spring and summer");
-             correctAnswer++;
-            break;
-
-    }
-
-
-
-
-//*********************************************************************************************************
-
 var a4 = prompt("Do I love swimming?").toUpperCase();;
 //answerQuestion(a4);
 
