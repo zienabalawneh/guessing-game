@@ -79,33 +79,37 @@ function Q1() {
 }
 Q1();
 
-/*
+
 
 //*********************************************************************************************************
+function Q2() {
+  var a2 = prompt("Do you think I prefer to spend the trip with the family?").toUpperCase();;
+  //answerQuestion(a2);
 
-var a2 = prompt("Do you think I prefer to spend the trip with the family?").toUpperCase();;
-//answerQuestion(a2);
+  while (a2 !== 'YES' && a2 !== 'Y' && a2 !== 'NO' && a2 !== 'N') {
 
-while(a2!=='YES' && a2!=='Y' && a2!=='NO'&& a2!=='N'){
+    a2 = prompt("Do you think I prefer to spend the trip with the family?").toUpperCase();
+  }
 
-    a2 = prompt("Do you think I prefer to spend the trip with the family?").toUpperCase();}
+  switch (a2.toUpperCase()) {
+    case 'YES':
+    case 'Y':
+      console.log(' Oh, your answer,' + a2 + ", that's cool");
+      alert(' Oh, your answer,' + a2 + ", that's cool");
+      correctAnswer++;
+      break;
 
-    switch (a2.toUpperCase()) {
-        case 'YES':
-        case 'Y':
-             console.log(' Oh, your answer,' + a2 + ", that's cool");
-            alert(' Oh, your answer,' + a2 + ", that's cool");
-            correctAnswer++;
-            break;
+    case 'NO':
+    case 'N':
+      console.log(' Your answer is,' + a2 + ", better luck");
+      alert(' Your answer is,' + a2 + ", better luck");
+      break;
 
-        case 'NO':
-        case 'N':
-             console.log(' Your answer is,' + a2 + ", better luck");
-            alert(' Your answer is,' + a2 + ", better luck");
-            break;
+  }
+}
 
-    }
-
+Q2();
+/*
 //*********************************************************************************************************
 
 var a3 = prompt("Does I like spring and summer?").toUpperCase();;
