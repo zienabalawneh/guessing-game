@@ -1,6 +1,4 @@
-
-/*
-img{
+/*img{
     width: 100px;
     display: block;
     margin: auto;
@@ -12,13 +10,17 @@ font-size:25px;
 }
 
 body{
-background-image:url("https://thumbs.dreamstime.com/b/man-question-doubtful-holding-mark-problems-solutions-symbol-pensive-male-getting-answers-portrait-peeking-behind-130604105.jpg");
-background-repeat:no-repeat;
+background-image:url("https://blog.prepscholar.com/hs-fs/hubfs/body_rollingthedice.png?width=600&name=body_rollingthedice.png");
 background-attachment: fixed;
 background-size:cover;
+font-family: 'Dancing Script', cursive;
 
 }
 
+
+
+
+}
 
 body main{width:auto;
     height: 1500px;
@@ -28,15 +30,16 @@ body main{width:auto;
 
 .ul2 li:nth-child(odd){
 font-size: medium;
-color:rgb(255, 0, 200);
+color:#BE0000;
 font-size: 25px;
+background-color:#F7EA00 ;
 }
 
 .ul2 li:nth-child(even){
-    color:rgb(7, 42, 241);
+    color:#F7EA00;
     font-size: medium;
     font-size: 25px;
-   
+   background-color:#BE0000 ;
 
 }
 
@@ -47,7 +50,7 @@ font-size: 25px;
 }
 
 ul li{text-transform:uppercase;
-     margin-left: 28px;
+     margin-left: 38px;
      list-style:square;
 
 }
@@ -56,11 +59,11 @@ p{
  color: rgb(39, 25, 30);
 line-height: 1.5;
 text-align: center;
-font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-font-size: 25px;
-border-color: rgb(231, 7, 156);
-border-style:double;
-border-radius:5px;
+font-size: 38px;
+background-color:#BE0000;
+
+position: relative;
+top: -75px;
 }
 
 footer{
@@ -69,27 +72,22 @@ text-decoration-line: underline;
 }
 ol li {
     display:list-item;
-    margin-left: 28px;
+    margin-left: 38px;
 }
-ol{list-style:decimal;}
+ol{list-style:decimal;color: #81B214;font-size:34px;}
 main ol li{
     
     padding :5px;
-    border-style:double;
-    border-color:purple;
-    border-radius: 10px;
     font-size: 25px;
+  
 }
 
 main ol li img{   
     margin-left:2%;
 }
 .ul1{
-    color:palevioletred;
+    color: seagreen;
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: medium;
-    border-color: black;
-    border-style: double;
+    font-size:35px;
     border-radius: 5px;
 }

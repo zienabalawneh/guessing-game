@@ -1,52 +1,26 @@
+
 'use strict';
 
-/*function answerQuestion(answer) {
 
-    switch (answer.toUpperCase()) {
-        case 'YES':
-        case 'Y':
-            // console.log(' Oh, your answer,' ,answer);
-            alert(' Oh, your answer,' + answer + ", that's cool");
-            break;
-
-        case 'NO':
-        case 'N':
-            // console.log('your answer,' ,answer);
-            alert(' Your answer is,' + answer + ", better luck");
-            break;
-        default:
-            alert('keep the answer to \'YES\' or \'NO\' or \'Y\' or \'N\' only please')
-
-
-
-    }
-
-
-
-}*/
 
 let correctAnswer = 0;
 
 let userName = prompt("Please, what is your name?");
 function Qusername(userName) {
   while (!userName) {
-
-
     userName = prompt("Please, what is your name?")
   }
-  console.log('Hello ' + userName + ', I am really pleased with you');
 
   alert('Hello ' + userName + ", I am really pleased with you");
-  
-  document.write("<center><h1>welcome : " + userName + "</h1></center>");
 
-  document.write("<center><p>Hello " + userName + ", I am really pleased with you</p></center>");
+  document.write("<center><P style='width=500px;top:10px'>welcome : " + userName + "</p></center>");
 
-  document.write('<center><img src="https://i.pinimg.com/originals/0d/a5/cb/0da5cbca5d728a789100439958f50235.gif"alt="hi" style="width=500px;"></center>');
+  document.write("<center><p style='width=500px;top:40px'>Hello " + userName + ", I am really pleased with you</p></center>");
+
+  document.write('<center><P style="width=500px;top:40px"><img src="https://i.pinimg.com/originals/0d/a5/cb/0da5cbca5d728a789100439958f50235.gif"alt="hi"></P></center>');
 }
 
 Qusername(userName);
-
 
 
 
@@ -56,7 +30,7 @@ Qusername(userName);
 
 function Q1() {
   var a1 = prompt("You have to guess, do you think I like trekking?").toUpperCase();
-  //answerQuestion(a1);
+
 
 
   while (a1 !== 'YES' && a1 !== 'Y' && a1 !== 'NO' && a1 !== 'N') {
@@ -68,14 +42,12 @@ function Q1() {
   switch (a1.toUpperCase()) {
     case 'YES':
     case 'Y':
-      console.log(' Oh, your answer, ', a1 + " , that's cool");
       alert(' Oh, your answer, ' + a1 + " , that's cool");
       correctAnswer++;
       break;
 
     case 'NO':
     case 'N':
-      console.log('your answer, ', a1 + " , better luck");
       alert(' Your answer is, ' + a1 + " , better luck");
       break;
 
@@ -83,12 +55,10 @@ function Q1() {
 }
 Q1();
 
-
-
 //*********************************************************************************************************
 function Q2() {
   var a2 = prompt("Do you think I prefer to spend the trip with the family?").toUpperCase();;
-  //answerQuestion(a2);
+ 
 
   while (a2 !== 'YES' && a2 !== 'Y' && a2 !== 'NO' && a2 !== 'N') {
 
@@ -98,14 +68,12 @@ function Q2() {
   switch (a2.toUpperCase()) {
     case 'YES':
     case 'Y':
-      console.log(' Oh, your answer, ' + a2 + " , that's cool");
       alert(' Oh, your answer, ' + a2 + " , that's cool");
       correctAnswer++;
       break;
 
     case 'NO':
     case 'N':
-      console.log(' Your answer is, ' + a2 + " , better luck");
       alert(' Your answer is, ' + a2 + " , better luck");
       break;
 
@@ -118,7 +86,6 @@ Q2();
 //*********************************************************************************************************
 function Q3() {
   var a3 = prompt("Does I like spring and summer?").toUpperCase();;
-  //answerQuestion(a3);
 
   while (a3 !== 'YES' && a3 !== 'Y' && a3 !== 'NO' && a3 !== 'N') {
 
@@ -128,14 +95,12 @@ function Q3() {
   switch (a3.toUpperCase()) {
     case 'YES':
     case 'Y':
-      console.log(' Oh, your answer, ' + a3 + " ,its false, i does not like spring and summer ");
       alert(' Oh, your answer, ' + a3 + " ,its false, i does not like spring and summer ");
 
       break;
 
     case 'NO':
     case 'N':
-      console.log(' Your answer is, ' + a3 + " ,that's cool, i does not like spring and summer");
       alert(' Your answer is, ' + a3 + " ,that's cool, i does not like spring and summer");
       correctAnswer++;
       break;
@@ -146,12 +111,9 @@ function Q3() {
 Q3();
 
 
-
-
 //*********************************************************************************************************
 function Q4() {
   var a4 = prompt("Do I love swimming?").toUpperCase();;
-  //answerQuestion(a4);
 
   while (a4 !== 'YES' && a4 !== 'Y' && a4 !== 'NO' && a4 !== 'N') {
 
@@ -161,14 +123,12 @@ function Q4() {
   switch (a4.toUpperCase()) {
     case 'YES':
     case 'Y':
-      console.log(' Oh, your answer, ' + a4 + " ,that's cool,I love swimming so much ");
       alert(' Oh, your answer, ' + a4 + " ,that's cool,I love swimming so much ");
       correctAnswer++;
       break;
 
     case 'NO':
     case 'N':
-      console.log(' Your answer is, ' + a4 + " better luck,I love swimming so much");
       alert(' Your answer is, ' + a4 + " better luck,I love swimming so much");
       break;
 
@@ -178,10 +138,9 @@ function Q4() {
 Q4();
 
 
-/**************************************************** */
+//**************************************************** *
 function Q5() {
   var a5 = prompt("Do I love programing?").toUpperCase();;
-  //answerQuestion(a4);
 
   while (a5 !== 'YES' && a5 !== 'Y' && a5 !== 'NO' && a5 !== 'N') {
 
@@ -191,14 +150,12 @@ function Q5() {
   switch (a5.toUpperCase()) {
     case 'YES':
     case 'Y':
-      console.log(' Oh, your answer, ' + a5 + " ,that's cool,I love programing so much ");
       alert(' Oh, your answer, ' + a5 + " ,that's cool,I love programing so much ");
       correctAnswer++;
       break;
 
     case 'NO':
     case 'N':
-      console.log(' Your answer is, ' + a5 + " better luck,I love programing so much");
       alert(' Your answer is, ' + a5 + " better luck,I love programing so much");
       break;
 
@@ -206,10 +163,6 @@ function Q5() {
 }
 
 Q5();
-
-
-
-
 
 
 
@@ -223,18 +176,15 @@ function Q6() {
     while (!sleephours) { sleephours = Number(prompt('How many hours do I sleep at night??')); }
     if (sleephours === 7) {
       correctAnswer++;
-      console.log('it is a correct answer');
       alert('it is a correct answer');
       break;
     }
     else if (sleephours > 7) {
-      console.log('it is more than what you entered, try again ' + sleephours);
       alert('it is more than what you entered, try again');
       attempt--;
 
     }
     else if (sleephours < 7) {
-      console.log('it is less than what you entered, try again ' + sleephours);
       alert('it is less than what you entered, try again');
       attempt--;
     }
@@ -255,58 +205,52 @@ Q6();
 
 
 
-
-
-
 //***********************************************************************************
-function Q7(){
+function Q7() {
 
- let favfood ;
+  let favfood;
 
-let attempt2=6;
+  let attempt2 = 6;
 
-let arr=['grills','burger','pizza'];
+  let arr = ['grills', 'burger', 'pizza'];
 
 
-favfood = prompt('What do I prefer to eat on trips? Guess that').toLowerCase();
+  favfood = prompt('What do I prefer to eat on trips? Guess that').toLowerCase();
 
-outerloop1 :for (let z = 0; z <6; z++) {
-console.log(z);
-  for(let n=0;n<arr.length;n++){
+  outerloop1: for (let z = 0; z < 6; z++) {
+    for (let n = 0; n < arr.length; n++) {
 
-    if (favfood ==='grills'||favfood ==='burger'||favfood ==='pizza') {
+      if (favfood === 'grills' || favfood === 'burger' || favfood === 'pizza') {
+        correctAnswer++;
+        alert('yes it is one of my favorite food');
+        break outerloop1;
+      }
 
-      correctAnswer++;
-      alert('yes it is one of my favorite food');
+      else if (favfood !== 'grills' || favfood !== 'burger' || favfood !== 'pizza') {
+        alert('it is not one of my favorite food !');
+        attempt2--;
+        favfood = prompt('What do I prefer to eat on trips ?').toLowerCase();
 
-      break outerloop1;
-    }
+      }
 
-    else if (favfood !=='grills'||favfood !=='burger'||favfood !=='pizza') {
-      alert('it is not one of my favorite food !');
-      attempt2 --;
-      favfood = prompt('What do I prefer to eat on trips ?').toLowerCase();
-
-    }
-
-    if (attempt2 === 0) {
-      alert('you do not have extra attempt');
+      if (attempt2 === 0) {
+        alert('you do not have extra attempt');
+        break;
+      }
       break;
     }
-    break;
   }
-}
-for (let m=0;m<arr.length;m++){
-  alert('the aswers was ' + arr[m]);}
+  for (let m = 0; m < arr.length; m++) {
+    alert('the aswers was ' + arr[m]);
+  }
 }
 
 Q7();
-//************************************* */
+//************************************* *
 
-function ScoreUser(userName,correctAnswer){
-
+function ScoreUser(userName, correctAnswer) {
 
   alert('ok ' + userName + ' you answered ' + correctAnswer + ' question correctly');
 }
-  
-ScoreUser(userName,correctAnswer);
+
+ScoreUser(userName, correctAnswer);
